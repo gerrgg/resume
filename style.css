@@ -16,26 +16,6 @@ body {
   max-width: 400px;
   height: auto;
 }
-.content .summary .personal-links {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.content .summary .personal-links a {
-  color: #635D5C;
-  text-decoration: none;
-  border-right: 1px solid #635D5C;
-  padding-right: 0.5rem;
-}
-.content .summary .personal-links a i {
-  font-size: 1.5rem;
-  color: #CC2936;
-  padding-right: 0.25rem;
-}
-.content .summary .personal-links a:last-child {
-  padding-left: 0.5rem;
-  border: none;
-}
 .content .skills-section i {
   color: #CC2936;
 }
@@ -47,7 +27,7 @@ body {
   border-bottom: 1px solid #635D5C;
 }
 .content #projects {
-  color: #FFDD99;
+  color: #f7f7f7;
   background-color: #635D5C;
 }
 .content #projects h3 {
@@ -55,12 +35,69 @@ body {
   text-align: center;
   color: #FFDD99;
 }
+.content #projects .project {
+  border: 1px solid #FFDD99;
+  background-color: #f7f7f7;
+  color: #635D5C;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.content #projects .project header > a {
+  color: #CC2936;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.content #projects .project .project-links {
+  justify-content: flex-start;
+}
+.content #projects .project .title {
+  margin: 0.5rem 0;
+}
+.content #projects .project ul {
+  padding-bottom: 1rem;
+}
+.content #projects .project img {
+  border: 1px solid #FFDD99;
+  width: 90%;
+}
+.content #projects .tag {
+  background-color: #CC2936;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.project-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.project-links a {
+  white-space: nowrap;
+  color: #635D5C;
+  text-decoration: none;
+  border-right: 1px solid #635D5C;
+  padding: 0 0.5rem;
+}
+.project-links a i {
+  font-size: 1.5rem;
+  color: #CC2936;
+  padding-right: 0.25rem;
+}
+.project-links a:first-child {
+  padding-right: 0.5rem;
+}
+.project-links a:last-child {
+  padding-left: 0.5rem;
+  border: none;
+}
 
 .col-4 {
   background-color: #FFDD99;
   padding: 0 15px;
   width: 33.333%;
-  height: 100vh;
 }
 
 .col-8 {
@@ -76,9 +113,6 @@ body {
   .content {
     flex-direction: column;
   }
-}
-#projects h3 {
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
