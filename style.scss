@@ -1,25 +1,91 @@
+$color-dark: #635D5C;
+$color-light: #CEEAF7;
+$color-primary: #DB4345;
+
+$phone-width: "only screen and (max-width: 576px)";
+
+body{ font-family: 'Recursive', sans-serif; margin: 0 }
+
 .content{
     margin: 0 auto;
     display: flex;
 
+    .summary{
+        text-align: center;
+
+        .profile-pic{
+            border-radius: 100%;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .personal-links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a{
+                text-decoration: none;
+                border-right: 1px solid $color-dark;
+                padding-right: .5rem;
+
+                i{ padding-right: 0.25rem; }
+
+                &:last-child{
+                    padding-left: .5rem;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .skills-section{
+        i{ color: $color-primary }
+
+        table{
+
+            td{ padding: 0 .25rem }
+
+            .skill-score{
+                border-bottom: 1px solid $color-dark;
+            }
+
+        }
+    }
+
+    #projects{
+        h3{ 
+            font-size: 1.5rem;
+            text-align: center; 
+            color: $color-light; 
+        }
+
+        color: $color-light;
+        background-color: $color-dark;
+    }
+
 }
 
 .col-4{
+    background-color: $color-light;
+    padding: 0 15px;
     width: 33.333%;
 }
 
 .col-8{
+    padding: 0 15px;
     width: 66.666%;
 }
 
-.profile-pic{
-    border-radius: 100%;
-    width: 100%;
-    height: auto;
+@media #{$phone-width}{
+    .col-4, .col-8{ width: 100% }
+    .content{ flex-direction: column; }
 }
 
+
 #projects{
+
     h3{ text-align: center; }
 
-    
 }
