@@ -18,15 +18,18 @@ body {
 }
 .content .summary .personal-links {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 .content .summary .personal-links a {
+  color: #635D5C;
   text-decoration: none;
   border-right: 1px solid #635D5C;
   padding-right: 0.5rem;
 }
 .content .summary .personal-links a i {
+  font-size: 1.5rem;
+  color: #CC2936;
   padding-right: 0.25rem;
 }
 .content .summary .personal-links a:last-child {
@@ -34,28 +37,30 @@ body {
   border: none;
 }
 .content .skills-section i {
-  color: #DB4345;
+  color: #CC2936;
 }
 .content .skills-section table td {
+  white-space: nowrap;
   padding: 0 0.25rem;
 }
 .content .skills-section table .skill-score {
   border-bottom: 1px solid #635D5C;
 }
 .content #projects {
-  color: #CEEAF7;
+  color: #FFDD99;
   background-color: #635D5C;
 }
 .content #projects h3 {
   font-size: 1.5rem;
   text-align: center;
-  color: #CEEAF7;
+  color: #FFDD99;
 }
 
 .col-4 {
-  background-color: #CEEAF7;
+  background-color: #FFDD99;
   padding: 0 15px;
   width: 33.333%;
+  height: 100vh;
 }
 
 .col-8 {

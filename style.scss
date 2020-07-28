@@ -1,6 +1,6 @@
 $color-dark: #635D5C;
-$color-light: #CEEAF7;
-$color-primary: #DB4345;
+$color-light: #FFDD99;
+$color-primary: #CC2936;
 
 $phone-width: "only screen and (max-width: 576px)";
 
@@ -22,15 +22,20 @@ body{ font-family: 'Recursive', sans-serif; margin: 0 }
 
         .personal-links{
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
 
             a{
+                color: $color-dark;
                 text-decoration: none;
                 border-right: 1px solid $color-dark;
                 padding-right: .5rem;
 
-                i{ padding-right: 0.25rem; }
+                i{ 
+                    font-size: 1.5rem;
+                    color: $color-primary;
+                    padding-right: 0.25rem; 
+                }
 
                 &:last-child{
                     padding-left: .5rem;
@@ -45,7 +50,10 @@ body{ font-family: 'Recursive', sans-serif; margin: 0 }
 
         table{
 
-            td{ padding: 0 .25rem }
+            td{ 
+                white-space: nowrap;
+                padding: 0 .25rem 
+            }
 
             .skill-score{
                 border-bottom: 1px solid $color-dark;
@@ -55,6 +63,7 @@ body{ font-family: 'Recursive', sans-serif; margin: 0 }
     }
 
     #projects{
+
         h3{ 
             font-size: 1.5rem;
             text-align: center; 
@@ -71,6 +80,7 @@ body{ font-family: 'Recursive', sans-serif; margin: 0 }
     background-color: $color-light;
     padding: 0 15px;
     width: 33.333%;
+    height: 100vh;
 }
 
 .col-8{
