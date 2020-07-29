@@ -1,0 +1,139 @@
+nav {
+  background-color: #CC2936;
+  padding: 0 -15px;
+  width: 100%;
+  text-align: center;
+}
+nav a {
+  font-size: 1.25rem;
+  padding: 0 1rem;
+  color: #FFDD99;
+  text-decoration: none;
+  border-right: 1px solid #FFDD99;
+}
+nav a:first-child {
+  border-left: 1px solid #FFDD99;
+}
+
+body {
+  font-family: "Recursive", sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+}
+
+#sidebar {
+  max-width: 400px;
+  background-color: #FFDD99;
+  padding: 0 15px;
+}
+#sidebar .summary {
+  text-align: center;
+}
+#sidebar .summary .profile-pic {
+  border-radius: 100%;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+#sidebar .skills-section i {
+  color: #CC2936;
+}
+#sidebar .skills-section table td {
+  white-space: nowrap;
+  padding: 0 0.25rem;
+}
+#sidebar .skills-section table .skill-score {
+  border-bottom: 1px solid #451f4a;
+}
+
+#projects {
+  width: 100%;
+  padding: 15px;
+  color: #f7f7f7;
+  background-color: #451f4a;
+}
+#projects h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FFDD99;
+}
+#projects #quote {
+  font-size: 1.25rem;
+  text-align: center;
+}
+#projects .projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects .projects-grid .project {
+  width: 29%;
+  border: 1px solid #FFDD99;
+  background-color: #f7f7f7;
+  color: #451f4a;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+#projects .projects-grid .project header > a {
+  color: #CC2936;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+#projects .projects-grid .project .project-links {
+  justify-content: flex-start;
+}
+#projects .projects-grid .project .title {
+  margin: 0.5rem 0;
+}
+#projects .projects-grid .project ul {
+  padding-bottom: 1rem;
+}
+#projects .projects-grid .project img {
+  height: auto;
+  width: 100%;
+}
+#projects .projects-grid .project iframe {
+  width: 100%;
+}
+#projects .projects-grid .project .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects .projects-grid .project .tags .tag {
+  background-color: #CC2936;
+  color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+}
+.project-links a {
+  white-space: nowrap;
+  color: #451f4a;
+  text-decoration: none;
+  border-right: 1px solid #451f4a;
+  padding: 0 0.5rem;
+}
+.project-links a i {
+  font-size: 1.5rem;
+  color: #CC2936;
+  padding-right: 0.25rem;
+}
+.project-links a:first-child {
+  padding-right: 0.5rem;
+}
+.project-links a:last-child {
+  padding-left: 0.5rem;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

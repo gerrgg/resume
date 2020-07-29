@@ -1,0 +1,16 @@
+nav{
+    background-color: $color-primary;
+    padding: 0 -15px;
+    width: 100%;
+    text-align: center;
+    
+    a{
+        &:first-child{ border-left: 1px solid $color-light }
+        font-size: 1.25rem;
+        padding: 0 1rem;
+        color: $color-light;
+        text-decoration: none;
+        border-right: 1px solid $color-light;
+        // border-left: 1px solid $color-light;
+    }
+}
