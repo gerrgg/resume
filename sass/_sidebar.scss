@@ -1,0 +1,37 @@
+#sidebar{
+    max-width: 400px;
+    background-color: $color-light;
+    padding: 0 15px;
+    
+    .summary{
+
+        text-align: center;
+
+        .profile-pic{
+            border-radius: 100%;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        
+    }
+
+    .skills-section{
+
+        i{ color: $color-primary }
+
+        table{
+
+            td{ 
+                white-space: nowrap;
+                padding: 0 .25rem 
+            }
+
+            .skill-score{
+                border-bottom: 1px solid $color-dark;
+            }
+
+        }
+    }
+}

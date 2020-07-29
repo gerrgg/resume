@@ -1,118 +1,91 @@
 body {
-  font-family: "Recursive", sans-serif;
-  margin: 0;
-}
+  font-family: 'Recursive', sans-serif;
+  font-size: 13px;
+  margin: 0; }
 
 .content {
   margin: 0 auto;
-  display: flex;
-}
-.content .summary {
-  text-align: center;
-}
-.content .summary .profile-pic {
-  border-radius: 100%;
-  width: 100%;
+  display: flex; }
+
+#sidebar {
   max-width: 400px;
-  height: auto;
-}
-.content .skills-section i {
-  color: #CC2936;
-}
-.content .skills-section table td {
-  white-space: nowrap;
-  padding: 0 0.25rem;
-}
-.content .skills-section table .skill-score {
-  border-bottom: 1px solid #635D5C;
-}
-.content #projects {
+  background-color: #FFDD99;
+  padding: 0 15px; }
+  #sidebar .summary {
+    text-align: center; }
+    #sidebar .summary .profile-pic {
+      border-radius: 100%;
+      width: 100%;
+      max-width: 200px;
+      height: auto; }
+  #sidebar .skills-section i {
+    color: #CC2936; }
+  #sidebar .skills-section table td {
+    white-space: nowrap;
+    padding: 0 0.25rem; }
+  #sidebar .skills-section table .skill-score {
+    border-bottom: 1px solid #451f4a; }
+
+#projects {
+  width: 100%;
+  padding: 0 15px;
   color: #f7f7f7;
-  background-color: #635D5C;
-}
-.content #projects h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #FFDD99;
-}
-.content #projects .project {
-  border: 1px solid #FFDD99;
-  background-color: #f7f7f7;
-  color: #635D5C;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-.content #projects .project header > a {
-  color: #CC2936;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-.content #projects .project .project-links {
-  justify-content: flex-start;
-}
-.content #projects .project .title {
-  margin: 0.5rem 0;
-}
-.content #projects .project ul {
-  padding-bottom: 1rem;
-}
-.content #projects .project img {
-  border: 1px solid #FFDD99;
-  width: 90%;
-}
-.content #projects .tag {
-  background-color: #CC2936;
-  color: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  padding: 0.25rem 0.5rem;
-  cursor: pointer;
-}
+  background-color: #451f4a; }
+  #projects .quote {
+    font-size: 1.25rem;
+    text-align: center; }
+  #projects .projects-grid {
+    display: flex;
+    flex-wrap: wrap; }
+    #projects .projects-grid .project {
+      width: 29%;
+      border: 1px solid #FFDD99;
+      background-color: #f7f7f7;
+      color: #451f4a;
+      padding: .5rem;
+      margin: .5rem; }
+      #projects .projects-grid .project header > a {
+        color: #CC2936;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.25rem; }
+      #projects .projects-grid .project .project-links {
+        justify-content: flex-start; }
+      #projects .projects-grid .project .title {
+        margin: 0.5rem 0; }
+      #projects .projects-grid .project ul {
+        padding-bottom: 1rem; }
+      #projects .projects-grid .project img {
+        max-height: 300px;
+        width: 100%; }
+      #projects .projects-grid .project .tag {
+        background-color: #CC2936;
+        color: #f7f7f7;
+        border: 1px solid #f7f7f7;
+        padding: .25rem .5rem;
+        cursor: pointer; }
+  #projects h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFDD99; }
 
 .project-links {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.project-links a {
-  white-space: nowrap;
-  color: #635D5C;
-  text-decoration: none;
-  border-right: 1px solid #635D5C;
-  padding: 0 0.5rem;
-}
-.project-links a i {
-  font-size: 1.5rem;
-  color: #CC2936;
-  padding-right: 0.25rem;
-}
-.project-links a:first-child {
-  padding-right: 0.5rem;
-}
-.project-links a:last-child {
-  padding-left: 0.5rem;
-  border: none;
-}
-
-.col-4 {
-  background-color: #FFDD99;
-  padding: 0 15px;
-  width: 33.333%;
-}
-
-.col-8 {
-  padding: 0 15px;
-  width: 66.666%;
-}
-
-@media only screen and (max-width: 576px) {
-  .col-4, .col-8 {
-    width: 100%;
-  }
-
-  .content {
-    flex-direction: column;
-  }
-}
+  justify-content: center; }
+  .project-links a {
+    white-space: nowrap;
+    color: #451f4a;
+    text-decoration: none;
+    border-right: 1px solid #451f4a;
+    padding: 0 .5rem; }
+    .project-links a i {
+      font-size: 1.5rem;
+      color: #CC2936;
+      padding-right: 0.25rem; }
+    .project-links a:first-child {
+      padding-right: .5rem; }
+    .project-links a:last-child {
+      padding-left: .5rem;
+      border: none; }
 
 /*# sourceMappingURL=style.css.map */
