@@ -7,4 +7,8 @@ body{
 .container{
     display: flex;
     margin: 0 auto;
+
+    @media #{$phone-width}{
+        display: block;
+    }
 }

@@ -1,8 +1,16 @@
 #projects{
-    width: 100%;
+    // width: 100%;
+    margin-left: 330px;
     padding: 15px;
     color: $color-white;
     background-color: $color-dark;
+
+
+    @media #{$phone-width}{ 
+        width: 100%;
+        margin: 0;
+        padding: 1rem 0 0 0;
+    }
 
     h3{ 
         font-size: 1.5rem;
@@ -13,6 +21,7 @@
     #quote{
         font-size: 1.25rem;
         text-align: center;
+        padding: 0 .5rem;
     }
 
     .projects-grid{
@@ -21,6 +30,12 @@
 
         .project{
             width: 29%;
+
+            @media #{$phone-width}{ 
+                width: 90%;
+                margin: .5rem 1rem;
+            }
+
             border: 1px solid $color-light;
             background-color: $color-white;
             color: $color-dark;

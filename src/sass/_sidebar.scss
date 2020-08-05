@@ -1,7 +1,16 @@
 #sidebar{
-    max-width: 400px;
+    width: 300px;
+    position: fixed;
     background-color: $color-light;
     padding: 0 15px;
+    height: 100%;
+    
+    @media #{$phone-width}{
+        width: 100%;
+        height: 100%;
+        position: relative; 
+        padding: 0 0 1rem 0;
+    }
     
     .summary{
 
@@ -18,10 +27,13 @@
     }
 
     .skills-section{
+        @media #{$phone-width}{ text-align: center; }
 
         i{ color: $color-primary }
 
         table{
+
+            @media #{$phone-width}{ margin: 0 auto; }
 
             td{ 
                 white-space: nowrap;
